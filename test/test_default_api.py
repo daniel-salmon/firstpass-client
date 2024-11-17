@@ -26,13 +26,6 @@ class TestDefaultApi(unittest.TestCase):
     def tearDown(self) -> None:
         pass
 
-    def test_echo_echo_get(self) -> None:
-        """Test case for echo_echo_get
-
-        Echo
-        """
-        pass
-
     def test_get_blob_blob_blob_id_get(self) -> None:
         """Test case for get_blob_blob_blob_id_get
 

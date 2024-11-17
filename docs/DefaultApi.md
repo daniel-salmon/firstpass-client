@@ -4,79 +4,12 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**echo_echo_get**](DefaultApi.md#echo_echo_get) | **GET** /echo | Echo
 [**get_blob_blob_blob_id_get**](DefaultApi.md#get_blob_blob_blob_id_get) | **GET** /blob/{blob_id} | Get Blob
 [**get_user_user_get**](DefaultApi.md#get_user_user_get) | **GET** /user | Get User
 [**post_user_user_post**](DefaultApi.md#post_user_user_post) | **POST** /user | Post User
 [**put_blob_blob_blob_id_put**](DefaultApi.md#put_blob_blob_blob_id_put) | **PUT** /blob/{blob_id} | Put Blob
 [**token_token_post**](DefaultApi.md#token_token_post) | **POST** /token | Token
 
-
-# **echo_echo_get**
-> object echo_echo_get(words)
-
-Echo
-
-### Example
-
-
-```python
-import firspass_client
-from firspass_client.rest import ApiException
-from pprint import pprint
-
-# Defining the host is optional and defaults to http://localhost
-# See configuration.py for a list of all supported configuration parameters.
-configuration = firspass_client.Configuration(
-    host = "http://localhost"
-)
-
-
-# Enter a context with an instance of the API client
-with firspass_client.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
-    api_instance = firspass_client.DefaultApi(api_client)
-    words = 'words_example' # str | 
-
-    try:
-        # Echo
-        api_response = api_instance.echo_echo_get(words)
-        print("The response of DefaultApi->echo_echo_get:\n")
-        pprint(api_response)
-    except Exception as e:
-        print("Exception when calling DefaultApi->echo_echo_get: %s\n" % e)
-```
-
-
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **words** | **str**|  | 
-
-### Return type
-
-**object**
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Successful Response |  -  |
-**422** | Validation Error |  -  |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_blob_blob_blob_id_get**
 > Blob get_blob_blob_blob_id_get(blob_id)
