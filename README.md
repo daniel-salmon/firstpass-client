@@ -61,27 +61,21 @@ configuration = firspass_client.Configuration(
     host = "http://localhost"
 )
 
-# The client must configure the authentication and authorization parameters
-# in accordance with the API server security policy.
-# Examples for each auth method are provided below, use the example that
-# satisfies your auth use case.
-
-configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 
 # Enter a context with an instance of the API client
 with firspass_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = firspass_client.DefaultApi(api_client)
-    blob_id = 'blob_id_example' # str | 
+    words = 'words_example' # str | 
 
     try:
-        # Get Blob
-        api_response = api_instance.get_blob_blob_blob_id_get(blob_id)
-        print("The response of DefaultApi->get_blob_blob_blob_id_get:\n")
+        # Echo
+        api_response = api_instance.echo_echo_get(words)
+        print("The response of DefaultApi->echo_echo_get:\n")
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling DefaultApi->get_blob_blob_blob_id_get: %s\n" % e)
+        print("Exception when calling DefaultApi->echo_echo_get: %s\n" % e)
 
 ```
 
@@ -91,6 +85,7 @@ All URIs are relative to *http://localhost*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
+*DefaultApi* | [**echo_echo_get**](docs/DefaultApi.md#echo_echo_get) | **GET** /echo | Echo
 *DefaultApi* | [**get_blob_blob_blob_id_get**](docs/DefaultApi.md#get_blob_blob_blob_id_get) | **GET** /blob/{blob_id} | Get Blob
 *DefaultApi* | [**get_user_user_get**](docs/DefaultApi.md#get_user_user_get) | **GET** /user | Get User
 *DefaultApi* | [**post_user_user_post**](docs/DefaultApi.md#post_user_user_post) | **POST** /user | Post User
