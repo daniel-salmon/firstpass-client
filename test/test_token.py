@@ -14,7 +14,7 @@
 
 import unittest
 
-from firspass_client.models.token import Token
+from firstpass_client.models.token import Token
 
 class TestToken(unittest.TestCase):
     """Token unit test stubs"""

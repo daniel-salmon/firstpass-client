@@ -19,14 +19,14 @@ from typing_extensions import Annotated
 from pydantic import Field, StrictStr, field_validator
 from typing import Optional
 from typing_extensions import Annotated
-from firspass_client.models.blob import Blob
-from firspass_client.models.token import Token
-from firspass_client.models.user_create import UserCreate
-from firspass_client.models.user_get import UserGet
+from firstpass_client.models.blob import Blob
+from firstpass_client.models.token import Token
+from firstpass_client.models.user_create import UserCreate
+from firstpass_client.models.user_get import UserGet
 
-from firspass_client.api_client import ApiClient, RequestSerialized
-from firspass_client.api_response import ApiResponse
-from firspass_client.rest import RESTResponseType
+from firstpass_client.api_client import ApiClient, RequestSerialized
+from firstpass_client.api_response import ApiResponse
+from firstpass_client.rest import RESTResponseType
 
 
 class DefaultApi:

@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from firspass_client.models.user_get import UserGet
+from firstpass_client.models.user_get import UserGet
 
 # TODO update the JSON string below
 json = "{}"

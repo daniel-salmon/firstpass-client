@@ -14,7 +14,7 @@
 
 import unittest
 
-from firspass_client.models.user_get import UserGet
+from firstpass_client.models.user_get import UserGet
 
 class TestUserGet(unittest.TestCase):
     """UserGet unit test stubs"""

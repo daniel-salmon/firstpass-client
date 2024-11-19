@@ -14,7 +14,7 @@
 
 import unittest
 
-from firspass_client.models.http_validation_error import HTTPValidationError
+from firstpass_client.models.http_validation_error import HTTPValidationError
 
 class TestHTTPValidationError(unittest.TestCase):
     """HTTPValidationError unit test stubs"""
@@ -36,7 +36,7 @@ class TestHTTPValidationError(unittest.TestCase):
         if include_optional:
             return HTTPValidationError(
                 detail = [
-                    firspass_client.models.validation_error.ValidationError(
+                    firstpass_client.models.validation_error.ValidationError(
                         loc = [
                             null
                             ], 

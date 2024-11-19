@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from firspass_client.models.validation_error_loc_inner import ValidationErrorLocInner
+from firstpass_client.models.validation_error_loc_inner import ValidationErrorLocInner
 
 # TODO update the JSON string below
 json = "{}"

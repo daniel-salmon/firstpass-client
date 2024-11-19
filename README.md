@@ -24,7 +24,7 @@ pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git
 
 Then import the package:
 ```python
-import firspass_client
+import firstpass_client
 ```
 
 ### Setuptools
@@ -38,7 +38,7 @@ python setup.py install --user
 
 Then import the package:
 ```python
-import firspass_client
+import firstpass_client
 ```
 
 ### Tests
@@ -51,13 +51,13 @@ Please follow the [installation procedure](#installation--usage) and then run th
 
 ```python
 
-import firspass_client
-from firspass_client.rest import ApiException
+import firstpass_client
+from firstpass_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = firspass_client.Configuration(
+configuration = firstpass_client.Configuration(
     host = "http://localhost"
 )
 
@@ -70,9 +70,9 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 
 
 # Enter a context with an instance of the API client
-with firspass_client.ApiClient(configuration) as api_client:
+with firstpass_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = firspass_client.DefaultApi(api_client)
+    api_instance = firstpass_client.DefaultApi(api_client)
     blob_id = 'blob_id_example' # str | 
 
     try:

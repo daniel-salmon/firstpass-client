@@ -26,11 +26,11 @@ from urllib.parse import quote
 from typing import Tuple, Optional, List, Dict, Union
 from pydantic import SecretStr
 
-from firspass_client.configuration import Configuration
-from firspass_client.api_response import ApiResponse, T as ApiResponseT
-import firspass_client.models
-from firspass_client import rest
-from firspass_client.exceptions import (
+from firstpass_client.configuration import Configuration
+from firstpass_client.api_response import ApiResponse, T as ApiResponseT
+import firstpass_client.models
+from firstpass_client import rest
+from firstpass_client.exceptions import (
     ApiValueError,
     ApiException,
     BadRequestException,
@@ -449,7 +449,7 @@ class ApiClient:
             if klass in self.NATIVE_TYPES_MAPPING:
                 klass = self.NATIVE_TYPES_MAPPING[klass]
             else:
-                klass = getattr(firspass_client.models, klass)
+                klass = getattr(firstpass_client.models, klass)
 
         if klass in self.PRIMITIVE_TYPES:
             return self.__deserialize_primitive(data, klass)

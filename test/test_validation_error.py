@@ -14,7 +14,7 @@
 
 import unittest
 
-from firspass_client.models.validation_error import ValidationError
+from firstpass_client.models.validation_error import ValidationError
 
 class TestValidationError(unittest.TestCase):
     """ValidationError unit test stubs"""

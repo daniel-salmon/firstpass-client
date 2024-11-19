@@ -14,7 +14,7 @@
 
 import unittest
 
-from firspass_client.api.default_api import DefaultApi
+from firstpass_client.api.default_api import DefaultApi
 
 
 class TestDefaultApi(unittest.TestCase):

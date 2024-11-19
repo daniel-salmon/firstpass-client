@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from firspass_client.models.blob import Blob
+from firstpass_client.models.blob import Blob
 
 # TODO update the JSON string below
 json = "{}"

@@ -14,7 +14,7 @@
 
 import unittest
 
-from firspass_client.models.blob import Blob
+from firstpass_client.models.blob import Blob
 
 class TestBlob(unittest.TestCase):
     """Blob unit test stubs"""

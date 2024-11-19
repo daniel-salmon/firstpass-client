@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from firspass_client.models.validation_error import ValidationError
+from firstpass_client.models.validation_error import ValidationError
 
 # TODO update the JSON string below
 json = "{}"
