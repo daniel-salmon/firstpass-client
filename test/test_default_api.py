@@ -26,6 +26,13 @@ class TestDefaultApi(unittest.TestCase):
     def tearDown(self) -> None:
         pass
 
+    def test_delete_user_user_delete(self) -> None:
+        """Test case for delete_user_user_delete
+
+        Delete User
+        """
+        pass
+
     def test_get_blob_blob_blob_id_get(self) -> None:
         """Test case for get_blob_blob_blob_id_get
 
